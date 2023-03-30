@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgba(250, 241, 158, 0.7);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $dark;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  background-color: transparent;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.125rem;
+  color: $dark;
+  font-family: "Inter", sans-serif;
+}
+
+input::placeholder {
+  color: $dark;
+  opacity: 0.4;
+}
+
+#root {
+  height: 100vh;
+  position: relative;
+}
+
+.centred-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
