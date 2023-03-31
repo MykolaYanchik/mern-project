@@ -28,6 +28,7 @@ export default function RegistrationForm() {
         <div className="input-error"></div>
       </div>
       <div className="input-container">
+        <div className="input-beige">@</div>
         <input
           type="text"
           placeholder="Name"

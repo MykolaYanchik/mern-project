@@ -24,6 +24,7 @@ button {
   background-color: transparent;
   font-size: 1.125rem;
   cursor: pointer;
+  transition: .4s;
 }
 
 input {
@@ -31,15 +32,31 @@ input {
   border: none;
   outline: none;
   background-color: transparent;
-  padding: 0.75rem 1.25rem;
+  padding: 0.875rem 1.25rem;
   font-size: 1.125rem;
   color: $dark;
   font-family: "Inter", sans-serif;
+  border: 2px solid transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 40px rgb(255, 255, 255) inset !important;
+  color: #303c42 !important;
+  border: 2px solid $border-color;
 }
 
 input::placeholder {
   color: $dark;
   opacity: 0.4;
+}
+
+
+input:focus,
+input:active {
+  border-color: darkgreen;
 }
 
 #root {
